@@ -202,6 +202,11 @@ input[type="radio"].visually-hidden {
 	order: 1;
 }
 
+.features-item h3,
+.features-item h4 {
+	color: #000;
+}
+
 .features-item .title {
 	order: -1;
 	margin: 0;
@@ -263,6 +268,7 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 25px;
 	font-size: 21px;
 	font-weight: 700;
+	color: #fff;
 
 }
 
@@ -983,6 +989,7 @@ footer {
 .partner b {
 	vertical-align: top;
   line-height: 40px;
+  color: #000;
 }
 
 .partner a:hover path,
