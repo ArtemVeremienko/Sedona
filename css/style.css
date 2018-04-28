@@ -358,7 +358,10 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 44px;
 }
 
-
+.btn-search {
+	position: relative;
+	z-index: 1;
+}
 
 .search-form {
 	display: block;
@@ -372,7 +375,10 @@ input[type="radio"].visually-hidden {
 	font-weight: 700;
 	color: #000;
 	background-color: #fff;
+	animation: bounce 1s;
 }
+
+
 
 .btn-form {
 	padding: 16px 196px;
@@ -1000,4 +1006,32 @@ footer {
 .partner a:active path {
 	fill: #000;
 	opacity: 0.3;
+}
+
+.search-form-close {
+	display: none;
+}
+
+.search-form-error {
+	animation: shake 0.8s;
+}
+
+@keyframes bounce {
+	0% {transform: translateY(2000px);}
+	70% {transform: translateY(-30px);}
+	90% {transform: translateY(10px);}
+	100% {transform: translateY(0);}
+}
+
+@keyframes shake {
+	0%, 100% {transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
