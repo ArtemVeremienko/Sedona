@@ -361,6 +361,7 @@ input[type="radio"].visually-hidden {
 .btn-search {
 	position: relative;
 	z-index: 1;
+	cursor: pointer;
 }
 
 .search-form {
@@ -383,6 +384,7 @@ input[type="radio"].visually-hidden {
 .btn-form {
 	padding: 16px 196px;
 	background-color: #81b3d2;
+	cursor: pointer;
 }
 
 .btn-form:hover,
